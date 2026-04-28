@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Supply Chain</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Login Page -->
+<div id="loginPage" class="container">
+  <div class="login-box">
+    <h2>Smart Supply Chain</h2>
+    <input type="email" placeholder="Email" id="email">
+    <input type="password" placeholder="Password" id="password">
+    <button onclick="login()">Sign In</button>
+  </div>
+</div>
+
+<!-- Dashboard -->
+<div id="dashboard" class="hidden">
+
+  <header>
+    <h1>Dashboard</h1>
+  </header>
+
+  <div class="cards">
+    <div class="card">Total Orders: <span id="orders">320</span></div>
+    <div class="card">In Transit: <span id="transit">56</span></div>
+    <div class="card">Low Stock: <span id="stock">45</span></div>
+  </div>
+
+  <div class="map-section">
+    <h3>Live Tracking (Delhi → Roorkee)</h3>
+    <div class="map-box">🚚 Truck Moving...</div>
+  </div>
+
+  <div class="buttons">
+    <button onclick="showPrediction()">Demand Prediction</button>
+    <button onclick="optimizeRoute()">Optimize Route</button>
+    <button onclick="showReports()">Reports</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
